@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is Admin Page</h1>
+
+    <a href="/cart">View Cart</a><br><br>
+    <a href="/orders">View Order</a><br><br>
+    <a href="/customers">View Customers</a><br><br>
+    <a href="/products">View Products</a><br><br>
+
+
+    <form action="/getcartdetails" method="get">
+        <h3>To View The Cart</h3>
+
+        <label for="cart">cart ID:</label>
+        <input type="text" name="cart_id" id="cart" required><br><br>
+
+        <button type="submit">View The Cart</button>
+    </form>
+
+<br>
+
+
+
+
+<form action="/deletecartdetails" method="get">
+    <h3>Delete The Cart</h3>
+
+    <label for="cart">cart ID:</label>
+    <input type="text" name="cart_id" id="cart" required><br><br>
+
+    <label for="deletecart">Line ID:</label>
+    <input type="text" name="line_id" id="deletecart" required><br><br>
+
+    <button type="submit">Delete The Cart</button>
+</form>
+
+<br>
+
+
+
+<form action="/cartlinedetails" method="get">
+    <h3>Cart Line Add</h3>
+
+    <label for="cart">cart ID:</label>
+    <input type="text" name="cart_id" id="cart" required><br><br>
+
+    <label for="cartline">Merchent ID:</label>
+    <input type="text" name="merchent_id" id="cartline" required><br><br>
+
+    <button type="submit"> The Cart Line Add</button>
+</form>
+
+</body>
+</html>
+
